@@ -1,0 +1,15 @@
+with python,
+read file Amazom.html and parse it with Beautifullsoup
+
+find all
+div data-asin="B074MX8VN5" data-index="2" data-uuid="ab60957e-269c-4c21-9dba-6e1992833284" data-component-type="s-search-result" class="sg-col-4-of-24 sg-col-4-of-12 s-result-item s-asin sg-col-4-of-16 AdHolder sg-col s-widget-spacing-small sg-col-4-of-20" data-component-id="4" data-cel-widget="search_result_1
+
+for all the divs
+try find span class="a-size-base-plus a-color-base a-text-normal" and store it to Producr_mame
+except Product_name= " "
+try find  span class="a-price-whole" and store it to Product_price
+except Product_price = " "
+try find span class="a-size-base s-underline-text" and store it to Producr_review
+except Product_review = " "
+
+open an excel file and write  Producr_mame, Product_price, Producr_review
